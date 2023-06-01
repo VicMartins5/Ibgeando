@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #222222;
+    margin: 0;
+}
+
+#svg-map {
+    display: block;
+    margin: 0 auto
+}
+
+#svg-map text {
+    fill:#fff;
+    font:12px Arial-BoldMT, sans-serif;
+    cursor:pointer
+}
+
+#svg-map a {
+    text-decoration: none
+}
+
+#svg-map a:hover {
+    cursor: pointer;
+    text-decoration: none
+}
+
+#svg-map a:hover path,
+#svg-map a:hover .circle,
+#svg-map path.circle:hover {
+    fill: #009c3b;
+    cursor: pointer
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #383838;
+    margin-bottom: 40px;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #0094d9;
+    color: white;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 2%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+}
+
+tr td:first-child {
+    text-align: left;
+    padding-left: 2%;
+}
+
+td,
+th,
+h1 {
+    text-align: center;
+    border: none;
+    color: #ffa500;
+    padding-bottom: 20px;
+    font-size: 20;
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+th:first-of-type {
+    width: 50%;
+}
+
+th {
+    background-color: #383838;
+    color: #ffa500;
+    padding: 2%;
+    border-bottom: 2px solid #dddddd;
+    font-size: 22px;
+    margin: 0 auto 20;
+}
+
+th a:link,
+th a:visited,
+th a:hover,
+th a:active {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+th a:hover {
+    text-decoration: underline !important;
+}
+
+.grafico {
+    display: block;
+    margin: 0 auto 20;
+}
+
+@media screen and (max-width: 768) {
+    .column {
+        flex: 100%;
+    }
+}
